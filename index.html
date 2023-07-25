@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="barbie.jpg" alt="Barbie.jpg" class="center"></img>
+      <h1 id="live_time"></h1>
+    <script>
+      let time = document.getElementById("live_time");
+
+      setInterval(() => {
+        let d= new Date();
+        time.innerHTML = d.toLocaleTimeString();
+      })
+    </script>
+</body>
+</html>
